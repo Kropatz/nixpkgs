@@ -5,7 +5,7 @@
 # nix build .#legacyPackages.x86_64-darwin.mesa .#legacyPackages.aarch64-darwin.mesa
 rec {
   pname = "mesa";
-  version = "25.0.1";
+  version = "25.1.0-git";
 
   src = fetchFromGitLab {
     domain = "gitlab.freedesktop.org";
