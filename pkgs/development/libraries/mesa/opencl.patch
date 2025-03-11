@@ -11,21 +11,24 @@ index c150bff74ff..37fa7f0531b 100644
  
    dep_clang = cpp.find_library('clang-cpp', dirs : llvm_libdir, required : false)
  
-diff --git a/meson_options.txt b/meson_options.txt
-index 82324617884..4bde97a8568 100644
---- a/meson_options.txt
-+++ b/meson_options.txt
-@@ -738,3 +738,10 @@ option(
-     'none', 'dri2'
+diff --git i/meson.options w/meson.options
+index 2622cf1..45a5d04 100644
+--- i/meson.options
++++ w/meson.options
+@@ -762,6 +762,13 @@ option(
    ],
  )
-+
+ 
 +option(
 +  'clang-libdir',
 +  type : 'string',
 +  value : '',
 +  description : 'Locations to search for clang libraries.'
 +)
++
+ option(
+   'mesa-clc',
+   type : 'combo',
 diff --git a/src/gallium/targets/opencl/meson.build b/src/gallium/targets/opencl/meson.build
 index ab2c83556a8..a59e88e122f 100644
 --- a/src/gallium/targets/opencl/meson.build
