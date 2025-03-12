@@ -7,12 +7,20 @@ rec {
   pname = "mesa";
   version = "25.1.0-git";
 
+  #src = fetchFromGitLab {
+  #  domain = "gitlab.freedesktop.org";
+  #  owner = "mesa";
+  #  repo = "mesa";
+  #  rev = "8d4a3729a3a1a0b997639370dca8cdd9c6e92084";
+  #  hash = "sha256-tG4CrKeoBZtZUw9t3ArUjClH7pna2rkpSZUEEzOmPRM=";
+  #};
+
   src = fetchFromGitLab {
     domain = "gitlab.freedesktop.org";
-    owner = "mesa";
+    owner = "hakzsam";
     repo = "mesa";
-    rev = "8d4a3729a3a1a0b997639370dca8cdd9c6e92084";
-    hash = "sha256-tG4CrKeoBZtZUw9t3ArUjClH7pna2rkpSZUEEzOmPRM=";
+    rev = "d35d0bcccc5a085f5d656b1f35c04e4d29470bf7";
+    hash = "sha256-1W968EgQK1hXq3wyr5yzPQFehnTJUgNRAvHlSwgiqZ0=";
   };
 
   meta = {
