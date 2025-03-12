@@ -11,8 +11,8 @@ rec {
     domain = "gitlab.freedesktop.org";
     owner = "mesa";
     repo = "mesa";
-    rev = "d1a2ba57f9f8fe0ed87a7286605bda4a954abd71";
-    hash = "sha256-9GNqeinZu274D8yIjyk9GoMbT9hlT6Qyaf8xDIX2TG4=";
+    rev = "8d4a3729a3a1a0b997639370dca8cdd9c6e92084";
+    hash = "sha256-tG4CrKeoBZtZUw9t3ArUjClH7pna2rkpSZUEEzOmPRM=";
   };
 
   meta = {
