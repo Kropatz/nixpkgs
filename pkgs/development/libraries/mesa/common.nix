@@ -7,21 +7,21 @@ rec {
   pname = "mesa";
   version = "25.1.0-git";
 
-  src = fetchFromGitLab {
-    domain = "gitlab.freedesktop.org";
-    owner = "mesa";
-    repo = "mesa";
-    rev = "8a47ae456cbae85508ec8bff73c9ec0020edd552";
-    hash = "sha256-kGoIUPZZ855+csIVU2/FvuANvnfVCL/cRF5jBTZyDCU=";
-  };
-
   #src = fetchFromGitLab {
   #  domain = "gitlab.freedesktop.org";
-  #  owner = "hakzsam";
+  #  owner = "mesa";
   #  repo = "mesa";
-  #  rev = "d35d0bcccc5a085f5d656b1f35c04e4d29470bf7";
-  #  hash = "sha256-1W968EgQK1hXq3wyr5yzPQFehnTJUgNRAvHlSwgiqZ0=";
+  #  rev = "8a47ae456cbae85508ec8bff73c9ec0020edd552";
+  #  hash = "sha256-kGoIUPZZ855+csIVU2/FvuANvnfVCL/cRF5jBTZyDCU=";
   #};
+
+  src = fetchFromGitLab {
+    domain = "gitlab.freedesktop.org";
+    owner = "hakzsam";
+    repo = "mesa";
+    rev = "3812c34f59643d91a1def826c9ef2c6a5406d482";
+    hash = "sha256-O0LGZh7Cu4g53ICB73hkwDjaWjn2J9FWfGlWYx+2kMI=";
+  };
 
   meta = {
     description = "Open source 3D graphics library";
